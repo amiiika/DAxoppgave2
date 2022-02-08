@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
+    <script src="script/formler.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Dødskalkulator</title>
+</head>
+
+<body>
+    <!-- Main title and decoration -->
+    <header>
+        <nav><img class="blood" src="src/blood.jpg"></nav>
+        <img class="threeSkulls" src="src/Skull2.jpg">
+        <h1>Dødskalkulator</h1>
+    </header>
+
+    <!-- Input feild  -->
+    <section>
+        <form action="submit">
+            <label>Fødselsdatoen din </label> <br><input type="date" placeholder="ddmmyy" id="fodselsdato"
+                required><br><br>
+
+            <label>Velg tallet som beskriver kjønnet ditt best </label><br><input type="number" placeholder="Kjønn"
+                id="kjønn" required><br><br>
+
+            <label>World Of Warcraft rasen din <br><input list="wowrace" placeholder="Ingen" required></label>
+            <datalist id="wowrace">
+                <option value="Ingen">
+                <option value="Human">
+                <option value="Dwarf">
+                <option value="Night Elf">
+                <option value="Gnome">
+                <option value="Draenei">
+                <option value="Worgen">
+                <option value="Pandaren">
+                <option value="Orc">
+                <option value="Undead">
+                <option value="Tauren">
+                <option value="Troll">
+                <option value="Blood Elf">
+                <option value="Goblin">
+                <option value="Void Elf">
+                <option value="Lightforged Draenei">
+                <option value="Dark Iron Dwarf">
+                <option value="Kul Tiran">
+                <option value="Mechagnome">
+                <option value="Nightborne">
+                <option value="Highmountain Tauren">
+                <option value="Mag'har Orc">
+                <option value="Zandalari Troll">
+                <option value="Vulpera">
+            </datalist>
+            <br><br>
+
+            <label>Antal ganger du har rettet Geir sin kode </label><br><input type="number" placeholder="Burde være 0"
+                id="antallGangerRettetGeirSinProg" required><br><br>
+
+            <label>Hvor mye trener du per uke? </label><br><input type="number" placeholder="Antall" id="treningPerUke"
+                required><br><br>
+
+            <label>Hvor mange ganger spiser du fast food per uke? </label><br><input type="number" placeholder="Antall"
+                id="McTjukkasPerManed" required><br><br>
+
+            <label>Har du spist forkost før skolen? </label><br><input type="checkbox" id="hasFrokostForSkole"
+                name="frokost" required>
+            <label for="frokost">Ja</label><br><br>
+
+            <label>Sitter du på med en kvinne? </label><br><input type="checkbox" name="kvinne"
+                id="hasDrivingFemalePartener">
+            <label for="kvinne">Ja</label>
+            <br><br>
+
+            <label>Sitter du på med en mann? </label><br><input type="checkbox" name="mann" id="hasMaleDrivingPartner">
+            <label for="mann">Ja</label><br><br>
+
+            <label>Spiller du i timen? </label><br><input type="checkbox" name="spiller" id="isSpillerItimen">
+            <label for="spiller" required>Ja</label><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Decoration -->
+    <img class="heart" src="src/heart.jpg">
+
+
+    <footer>
+        <!-- <img class="skullRight" src="src/skull1.png">
+        <img class="skullLeft" src="src/skull3.png"> -->
+    </footer>
+</body>
+
+</html>
